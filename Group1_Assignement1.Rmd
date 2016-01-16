@@ -1,0 +1,48 @@
+---
+title: "ANLT_203_01-Statistics for Data Science II, Assignment 1"
+author: "Heather Steich & Eric Salmon"
+date: "Due: January 24, 2016"
+output: html_document
+---
+
+
+```
+Assignment: Simulation of Probability Models in R
+
+
+Problem 1
+A random process in which events occur continuously and independently at a
+constant average rate of α is called a Poisson process. For example the number
+of phone calls to a corporate office in one hour with an average of 6 is a Poisson
+random variable with parameter α = 6.
+The time between successive events in a Poisson process follows the Exponential
+distribution with parameter lambda where 1
+lambda
+denotes the mean time. For
+instance in the example above, the time between calls to the corporate office is
+exponentially distributed with a mean of 10 minutes. (Note that α = λt). See
+https://en.wikipedia.org/wiki/Exponential_distribution to learn more
+about the Exponential random variable and its characteristics.
+Hint: You may find the commands dexp (finds PDF), pexp (finds CDF), and
+qexp (finds inverse CDF, opposite of pexp) in R helpful in answering following
+questions.
+1. Plot the probability density function of the time between calls to the
+corporate office mentioned above.
+2. What is the probability that time between two successive calls to this
+office will be longer than 10 minutes?
+3. 90% of calls made to this office takes less than x seconds. What’s x?
+Problem 2
+Assume that you flip a fair coin 30 times. You observe the sequence of heads
+and tails in your experiment. A run is a sequence of all heads or tails.
+1. You’re interested in finding the information about the longest run. Simulate
+in R, the experiment described above 10,000 times and each time
+note the length of the longest run. Find the average of the longest run
+in 10,000 simulations and report it. Hint: The rle command in R will be
+helpful.
+2. What is the probability of getting a run of 7 or more in 30 coin flips based
+on your simulation? Does your calculation for this probability follow the
+frequentists’ or Bayesian’s view of probability?
+
+
+```
+
